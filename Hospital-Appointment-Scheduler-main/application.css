@@ -1,0 +1,8 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.centered {
+    -fx-alignment: CENTER;
+}
+#user, #password, #signup {
+    -fx-pref-width: 250px;
+    -fx-pref-height: 30px;
+}

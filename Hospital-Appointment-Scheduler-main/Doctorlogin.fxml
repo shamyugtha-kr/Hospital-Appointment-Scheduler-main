@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="670.0" prefWidth="1370.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.doctorcontroller">
+   <top>
+      <AnchorPane prefHeight="669.0" prefWidth="1370.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="user" layoutX="685.0" layoutY="258.0" prefHeight="30.0" prefWidth="250.0" promptText="Username">
+               <font>
+                  <Font size="17.0" />
+               </font></TextField>
+            <Label layoutX="743.0" layoutY="226.0" text="DOCTOR LOGIN " textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="685.0" layoutY="355.0" prefHeight="30.0" prefWidth="250.0" promptText="Password">
+               <font>
+                  <Font size="17.0" />
+               </font></PasswordField>
+            <CheckBox layoutX="685.0" layoutY="404.0" mnemonicParsing="false" text="show password">
+               <font>
+                  <Font size="14.0" />
+               </font></CheckBox>
+            <Button fx:id="DloginButton" layoutX="685.0" layoutY="448.0" mnemonicParsing="false" onAction="#validate" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: #0096FF;" text="Sign in" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Label layoutX="707.0" layoutY="500.0" text="Dont't have an Account?" />
+            <ImageView fitHeight="113.0" fitWidth="147.0" layoutX="752.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@person1.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Register" layoutX="859.0" layoutY="496.0" mnemonicParsing="false" onAction="#doctorlogintoregister" style="-fx-background-color: #0096FF;" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <TextField layoutX="685.0" layoutY="307.0" prefHeight="30.0" prefWidth="250.0" promptText="E mail">
+               <font>
+                  <Font size="17.0" />
+               </font></TextField>
+            <ImageView fitHeight="523.0" fitWidth="527.0" layoutX="152.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@login.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

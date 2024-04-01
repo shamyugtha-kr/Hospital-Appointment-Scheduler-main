@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1368.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainDoctorController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <AnchorPane layoutY="41.0" prefHeight="77.0" prefWidth="1368.0" style="-fx-background-color: #0096FF;">
+                    <children>
+                        <Label layoutX="104.0" layoutY="26.0" prefHeight="27.0" prefWidth="333.0" text=" Hospital Appoinment Scheduler" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="home" layoutX="831.0" layoutY="22.0" mnemonicParsing="false" onAction="#redirectToHome" style="-fx-background-color: #0096FF;" text="Home" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="profile" layoutX="925.0" layoutY="22.0" mnemonicParsing="false" onAction="#redirectToProfile" style="-fx-background-color: #0096FF;" text="Profile" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="appoinment" layoutX="1023.0" layoutY="22.0" mnemonicParsing="false" onAction="#redirectToAppointment" style="-fx-background-color: #0096FF;" text="Appoinments" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="logout" layoutX="1162.0" layoutY="22.0" mnemonicParsing="false" onAction="#redirectTologout" style="-fx-background-color: #0096FF;" text="Logout" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <ImageView fitHeight="668.0" fitWidth="1368.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@patient.png" />
+                    </image>
+                </ImageView>
+            <Text fill="#0096ff" layoutX="83.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Whenever the art of medicine is loved, there is also a love of humanity.&quot;" wrappingWidth="484.13671875">
+               <font>
+                  <Font name="Arial Bold Italic" size="28.0" />
+               </font>
+            </Text>
+            <Text fill="#0096ff" layoutX="403.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Hippocrates." wrappingWidth="130.13671875">
+               <font>
+                  <Font name="Arial Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
